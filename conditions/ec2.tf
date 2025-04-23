@@ -25,3 +25,6 @@ resource "aws_security_group" "allow_tls" {
 
   tags = var.sg_tags
 }
+/* conditions in terraform:
+expression ? "this stmt runs if true":"this stmt runs if false"
+*/

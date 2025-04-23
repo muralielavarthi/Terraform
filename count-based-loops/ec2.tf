@@ -1,12 +1,18 @@
 resource "aws_instance" "expense" {
   count = length(var.instances)
-  # count = 3
-  ami                    = "ami-09c813fb71547fc4f" # This is our devops-practice AMI ID
+  # count = 3  - this will create three instances with same name
+  ami                    = "ami-09c813fb71547fc4f"
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
   instance_type          = "t3.micro"
   /* tags = {
     Name    = var.instances[count.index]
-  } */
+  } 
+  
+  var.instances[0] = mysql
+  var.instances[1] = backend
+  var.instances[1] = frontend
+  
+  */
   tags = merge(
     var.common_tags,
     {
