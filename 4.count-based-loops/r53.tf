@@ -16,3 +16,11 @@ resource "aws_route53_record" "frontend" {
   records = [aws_instance.expense[2].public_ip] #list type
   allow_overwrite = true
 }
+
+/* 
+
+mysql.emurali.shop
+backend.emurali.shop
+frontend.emurali.shop
+
+*/

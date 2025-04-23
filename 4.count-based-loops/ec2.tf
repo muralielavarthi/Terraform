@@ -8,6 +8,7 @@ resource "aws_instance" "expense" {
     Name    = var.instances[count.index]
   } 
   
+  count.index will give 0,1,2 values
   var.instances[0] = mysql
   var.instances[1] = backend
   var.instances[1] = frontend
@@ -44,17 +45,13 @@ resource "aws_security_group" "allow_tls" {
   }
 }
 
-/*Loops in terraform:
-
-count based loops
-for each loops
-dynamic blocks
+/* 3 types of Loops in terraform:
+    1.count based loops
+    2.for each loops
+    3.dynamic blocks
 
 Count based loops:
-
 - I want to create 3 ec2 instances - mysql, backend, frontend
-- 3 r53 private IP address
+- 2 r53 private IP address
 - 1 r53 public IP address
-
-
 */

@@ -7,7 +7,7 @@ variable "zone_id" {
 }
 
 variable "domain_name" {
-    default = "daws82s.online"
+    default = "emurali.shop"
 }
 
 variable "common_tags" {
