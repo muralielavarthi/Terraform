@@ -44,3 +44,10 @@ resource "resource-type" "resource-name" {
     key= value pairs
 }
 */
+
+/* AWS will create dependencies first and after that it will create actual resources irrespective of code sequence
+
+Creation: security group and then ec2-instance
+Destroy: ec2-instance and security group
+
+*/
