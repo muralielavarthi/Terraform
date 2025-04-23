@@ -100,3 +100,8 @@ Name=terraform
 Duration="120hrs"
 
 */
+/*.gitignore should be present in root level in project, without this you can't push code to github, you will see errors.
+*/
+
+
+
