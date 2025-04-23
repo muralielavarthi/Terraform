@@ -43,3 +43,18 @@ resource "aws_security_group" "allow_tls" {
     Name = "allow_tls"
   }
 }
+
+/*Loops in terraform:
+
+count based loops
+for each loops
+dynamic blocks
+
+Count based loops:
+
+- I want to create 3 ec2 instances - mysql, backend, frontend
+- 3 r53 private IP address
+- 1 r53 public IP address
+
+
+*/
