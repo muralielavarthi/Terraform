@@ -24,3 +24,9 @@ backend.emurali.shop
 frontend.emurali.shop
 
 */
+
+/*
+
+interpolation - concat variable names with text
+
+*/
