@@ -76,3 +76,8 @@ variable "variable-name" {
     }
 }
   */
+
+  /*
+ this file will be ignored by git, create it locally to verify
+  terraform.tfvars
+  */
