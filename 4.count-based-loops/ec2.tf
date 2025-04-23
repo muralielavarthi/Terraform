@@ -1,5 +1,5 @@
 resource "aws_instance" "expense" {
-  count = length(var.instances)
+  count = length(var.instances) # length function
   # count = 3  - this will create three instances with same name
   ami                    = "ami-09c813fb71547fc4f"
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
@@ -56,4 +56,16 @@ Count based loops:
 - 1 r53 public IP address
 */
 
-# we can't create custom functions in terraform
+/* we can't create custom functions in terraform
+
+  terraform console - we can pratice terraform code here.
+
+ interview: what are the functions you have used in your project.
+*/
+
+/* join function 
+
+> join(" ", ["murali","kunmar"])
+"murali kunmar"
+- exit
+*/
