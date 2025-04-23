@@ -18,8 +18,7 @@ resource "aws_security_group" "allow-all2" {
 resource "aws_instance" "webserver" { # this name is for terrafrom reference
      ami = "ami-09c813fb71547fc4f"
      vpc_security_group_ids = [aws_security_group.allow-all2.id]
-     #resource-type.security-group.id
-     #referring created security group 
+     #aws_security_group.allow-all2.id - id is output of security group
      instance_type = "t3.micro"
      tags = {
           Name = "webserver" # N-uppercase, name of instance
