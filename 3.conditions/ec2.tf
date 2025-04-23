@@ -25,6 +25,10 @@ resource "aws_security_group" "allow_tls" {
 
   tags = var.sg_tags
 }
-/* conditions in terraform:
+/* conditions syntax in terraform:
+
 expression ? "this stmt runs if true":"this stmt runs if false"
+
+instance_type          = var.environment == "prod" ? "t3.small" : "t3.micro"
+
 */
