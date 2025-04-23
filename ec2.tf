@@ -21,7 +21,7 @@ resource "aws_instance" "webserver" { # this name is for terrafrom reference
      #aws_security_group.allow-all2.id - id is output of security group
      instance_type = "t3.micro"
      tags = {
-          Name = "webserver" # N-uppercase, name of instance
+          Name = "webserver" # N-uppercase, name of server in AWS
           Purpose = "terraform pratice"
      }
   
