@@ -95,7 +95,7 @@ course2= {
 
 merge(course1,course2)
 
-output: second map will replace first one here.
+output: second map will replace first one here. all key pairs will be there but same will be merge.
 Name=terraform
 Duration="120hrs"
 
