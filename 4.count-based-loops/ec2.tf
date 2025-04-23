@@ -46,7 +46,7 @@ resource "aws_security_group" "allow_tls" {
 }
 
 /* 3 types of Loops in terraform:
-    1.count based loops
+    1.count based loops - iterate over list type of variables and create resources then this is usefull.
     2.for each loops
     3.dynamic blocks
 
@@ -55,3 +55,5 @@ Count based loops:
 - 2 r53 private IP address
 - 1 r53 public IP address
 */
+
+# we can't create custom functions in terraform

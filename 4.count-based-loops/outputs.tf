@@ -5,8 +5,7 @@
 }
  */
 
- #ec2_info variable contains complete output information or variable name can be anything.
- #After creating any resources, if you want to store the ouput then we use "output"
+ #aws_instance.expense variable contains complete output information
  #if you want to see the output of resources you created you can simply use "output"
  # the ouput will be in JSON format
 

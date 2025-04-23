@@ -43,9 +43,3 @@ variable "sg_tags" {
         Name = "expense-backend-dev"
     }
 }
-/* 
-1. command line --> -var "<var-name>=<var-value>"
-2. tfvars
-3. env var
-4. default values
-5. user prompt */
