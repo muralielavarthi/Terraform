@@ -51,3 +51,11 @@ Creation: security group and then ec2-instance
 Destroy: ec2-instance and security group
 
 */
+
+/* commands
+
+terraform plan
+terraform validate
+terraform apply -auto -approve 
+terraform fmt
+*/
