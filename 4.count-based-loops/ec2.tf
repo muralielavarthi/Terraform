@@ -63,9 +63,40 @@ Count based loops:
  interview: what are the functions you have used in your project.
 */
 
-/* join function 
+/* join function - list to string
 
-> join(" ", ["murali","kunmar"])
+> join(" ", ["murali","kunmar"]) 
 "murali kunmar"
 - exit
+
+split - string to list
+
+> split(" ","murali elavarthi")
+tolist([
+  "murali",
+  "elavarthi",
+])
+
+*/
+
+/*
+
+course1= {
+
+  Name="Devops"
+  Duration="120hrs"
+}
+
+course2= {
+
+  Name="terraform"
+  Duration="120hrs"
+}
+
+merge(course1,course2)
+
+output: second map will replace first one here.
+Name=terraform
+Duration="120hrs"
+
 */
