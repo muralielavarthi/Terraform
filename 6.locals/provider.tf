@@ -77,6 +77,6 @@ and it will not allow us to open .tfstate file. this locking is to avoid conflic
 Even excels will lock files to avoid conflicts like this.
 
 we can cannot keep state file in Github or locally in our laptop since it is very important file, 
-the solution is to place in AWS S3 bucket.
+the solution is to place state file in AWS S3 bucket.
 
 */
