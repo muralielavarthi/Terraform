@@ -47,4 +47,6 @@ data "resource-type" "resource-name" {
 
 - we will create data.tf file for this.
 - datasources are help not to hard code the details.
+
+we can use this information to create another resource
 */
