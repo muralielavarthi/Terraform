@@ -19,7 +19,9 @@ data "aws_ami" "joindevops" {
 }
 
 data "aws_vpc" "default" {
-  default = true
+  default = true 
+  #default vpc, for every region there will be default vpc
+  # as per provider, the region is "us-east-1" so, it will default vpc details from there
 }
 
 output  "ami_id" {
@@ -44,4 +46,5 @@ data "resource-type" "resource-name" {
 }
 
 - we will create data.tf file for this.
+- datasources are help not to hard code the details.
 */
