@@ -26,7 +26,7 @@ S3 buket: scalable storage in cloud.
   1.S3 buket name should be unique, all bukets in AWS should be unique
   2. Dynamo DB partion key id: LockID (same cases)
   - when we run terraform apply , it will keep lock files in dynamo DB so that no one can edit.
-  - lock file present in dynamo db means, no one can run terraform apply command since state file is locked
+  - lock file present in dynamo db means, no one can run terraform apply command since state file is locked.
   - for locking we use only dynamodb not mysql, this is how terraform is designed
  
  S3 bucket permissions should be restricted, others projects should have access to this bucket.
@@ -45,3 +45,11 @@ will restrict access to S3 bucket, everyone can't access this.
 S3 bucket: state file (we can download and see it)
 Dynamo DB: lockfiles 
 */
+
+/* .tf file names should be unique */
+/* mostly one s3 bucket will be there for one project, if project is very big they can keep seperate buckets for backend,
+frontend, database */
+
+
+
+
