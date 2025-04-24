@@ -53,6 +53,8 @@ variable "variable-name" {
  2. Variable data types - string, number, list, map, bool
  3. Variable preferences, terraform will search for value as per the below order:
 
+   How do you override default values in terraform ??
+
     1.command line ==> terraform plan -var "<var-name>=<var-value>"
     2.tfvars file (terraform.tfvars) - variable(<var-name>=<var-value>) placed in terraform.tfvars file- Here, 
     we are keeping, all variables in separate file.

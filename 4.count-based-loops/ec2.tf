@@ -5,7 +5,7 @@ resource "aws_instance" "expense" {
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
   instance_type          = "t3.micro"
   /* tags = {
-    Name    = var.instances[count.index]
+    Name    = var.instances[count.index] # indexing starts from zero
   } 
   
   count.index will give 0,1,2 values
