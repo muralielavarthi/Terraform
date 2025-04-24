@@ -47,8 +47,8 @@ Dynamo DB: lockfiles
 */
 
 /* .tf file names should be unique */
-/* mostly one s3 bucket will be there for one project, if project is very big they can keep seperate buckets for backend,
-frontend, database */
+/* mostly one s3 bucket will be there for one project. if project is very big also they can seperate it by creating 
+different keys for backend, frontend, database in the same bucket */
 
 
 
