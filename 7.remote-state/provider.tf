@@ -48,7 +48,15 @@ Dynamo DB: lockfiles
 
 /* .tf file names should be unique */
 /* mostly one s3 bucket will be there for one project. if project is very big also they can seperate it by creating 
-different keys for backend, frontend, database in the same bucket */
+different keys for backend, frontend, database in the same bucket 
+
+- terraform will sort out dependecies
+
+ 2 instances with tagged with same security group
+
+ 1 instance destroyed and now if you try to delete security group, it wil throw error, since there is one more
+ instance tagged with same security group.
+*/
 
 
 
