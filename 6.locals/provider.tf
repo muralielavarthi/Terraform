@@ -67,7 +67,7 @@ Here terraform.tfstate is not pushed to Github, since it very important and secu
 Developer 2: he clones the repo do some changes, runs terraform apply, since there is no terraform.tfstate 
 file in the repo, duplicate resources will create or errors will come, bcz terraform don't have .tfstate file to refer. 
 
-Solution: In collaboration environments, we must maintain state file remotely.
+Solution: In collaboration environments, we must maintain state file remotely that is centrally managed.
 
 one more issue: both the developers may run terraform apply at the same time, this will also leads to errors.
 locking is also important, so that we can prevent parrallel executions.
