@@ -25,8 +25,10 @@ resource "aws_security_group" "allow_tls" {
     # this is a block
   }
 
--Countbased and foreach loops are used to create multiple resources 
+-Count based loops and foreach loops are used to create multiple resources 
 -Dynamic blocks: dynamic blocks are used to create multiple blocks inside a resource 
  Ex: if you want to allow mulitple ports in a security group
+
+ - Mostly we use count and for_each loops.
 
 */
