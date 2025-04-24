@@ -15,4 +15,3 @@ variable "component" {
 variable "environment" {
     default = "dev"
 }
-
