@@ -46,8 +46,8 @@ resource "aws_security_group" "allow_tls" {
 }
 
 /* 3 types of Loops in terraform:
-    1.count based loops - iterate over list type of variables and create resources then this is usefull.
-    2.for each loops
+    1.count based loops - use it to iterate lists 
+    2.for each loops - use it to iterate map
     3.dynamic blocks
 
 Count based loops:
