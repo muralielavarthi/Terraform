@@ -22,7 +22,7 @@ provider "aws" {
 }
 
 /*
-S3 buket: scalable storage in cloud. 
+S3 buket: Simple storage service in cloud, where you store objects (files, data, etc.)
   1.S3 buket name should be unique, all bukets in AWS should be unique
   2. Dynamo DB partion key id: LockID (same cases)
   - when we run terraform apply , it will keep lock files in dynamo DB so that no one can edit.
