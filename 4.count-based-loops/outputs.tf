@@ -8,4 +8,5 @@
  #aws_instance.expense variable contains complete output information
  #if you want to see the output of resources you created you can simply use "output"
  # the ouput will be in JSON format
+ # output is used to print the details
 
