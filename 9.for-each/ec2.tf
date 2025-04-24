@@ -1,6 +1,6 @@
 resource "aws_instance" "this" {
-  for_each = var.instances # terraform will give us a variable called each
-  ami                    = "ami-09c813fb71547fc4f" # This is our devops-practice AMI ID
+  for_each = var.instances # terraform will give us a variable called "each"
+  ami                    = "ami-09c813fb71547fc4f"
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
   instance_type          = each.value
   tags = {
@@ -35,3 +35,13 @@ resource "aws_security_group" "allow_tls" {
 output "ec2_info" {
   value = aws_instance.this
 }
+
+/* while creating instance, if we iterate over list, will get the output in list format
+
+if we iterate over map, will get the output in map format
+
+*/
+
+
+
+
