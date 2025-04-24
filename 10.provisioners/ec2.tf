@@ -28,6 +28,9 @@ resource "aws_instance" "this" {
     ]
   }
 
+  # gracefull shut down (best practice) - instead of directly shutting down, 
+  # we have to stop everything inside in the server and then do the shut down
+
   provisioner "remote-exec" { #destroy time provisioner
     when = destroy
     inline = [
