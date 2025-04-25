@@ -56,6 +56,6 @@ Destroy: ec2-instance and security group
 
 terraform plan
 terraform validate
-terraform apply -auto -approve 
+terraform apply -auto-approve 
 terraform fmt - read tf files and do formatting and will keep spacing correctly.
 */
