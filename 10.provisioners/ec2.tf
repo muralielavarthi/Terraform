@@ -20,6 +20,7 @@ resource "aws_instance" "this" {
     password = "DevOps321"
     host     = self.public_ip
   }
+  # keeping passwords here, is not secure, we have use SSM paramters to store this.
 
   provisioner "remote-exec" { #creation time provisioner
     inline = [ # in this list we can write multiple commands.
