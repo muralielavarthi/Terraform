@@ -53,7 +53,7 @@ Destroy: ec2-instance and security group
 */
 
 /* commands
-
+terraform init
 terraform plan
 terraform validate
 terraform apply -auto-approve 

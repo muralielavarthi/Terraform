@@ -35,7 +35,7 @@ output "default_vpc_id" {
 /* 
 
 what is data sources ? 
-- data sources are used to query existing information from the provider
+- data sources are used to query existing information of resources from the provider
 Example: devops-practice ==> ami-24242445ixuyd ==> ami id changes when new updates are posted to ami.
 So, we can't hard code ami id in the code, during runtime we have to fetch this dynamically from AWS using data sources.
 
